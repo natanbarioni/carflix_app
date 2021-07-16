@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "carflix_app",
+    "slug": "carflix_app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "carflix_app"
+}
