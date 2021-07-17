@@ -1,11 +1,21 @@
 {
   "expo": {
-    "name": "carflix_app",
-    "slug": "carflix_app",
+    "name": "Marvel",
+    "icon": "./assets/icons/icon.png",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "carflix_app"
+    "slug": "your-app-slug",
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "versionCode": 1
+    },
+    "splash": {
+      "image": "./assets/icons/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    }
+  }
 }
