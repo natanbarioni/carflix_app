@@ -58,7 +58,13 @@ const style = StyleSheet.create({
         color: '#fff',
         fontSize: 15,
         padding: 5
-    }
+    },
+    containerLoading: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#000'
+    },
 });
 
 export default style;
