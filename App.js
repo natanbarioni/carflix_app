@@ -1,5 +1,5 @@
 import React from 'react';
-import MyStack from './assets/navigators/StackNavigator'
+import MyStack from './src/navigators/StackNavigator'
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {

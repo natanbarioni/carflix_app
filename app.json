@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Marvel",
-    "icon": "./assets/icons/icon.png",
+    "icon": "./src/icons/icon.png",
     "version": "1.0.0",
     "slug": "your-app-slug",
     "ios": {
@@ -13,7 +13,7 @@
       "versionCode": 1
     },
     "splash": {
-      "image": "./assets/icons/icon.png",
+      "image": "./src/icons/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     }

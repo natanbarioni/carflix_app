@@ -37,33 +37,54 @@ const style = StyleSheet.create({
     ContainerComics: {
         backgroundColor: '#000',
         flex: 1,
-        padding: 20,
         marginTop: StatusBar.currentHeight,
+        padding: 20,
+        alignItems: 'center',
+
     },
     BlocoComics: {
+        flex: 1,
         backgroundColor: "#252525",
         marginTop: 10,
-        borderRadius: 20,
-        width: '50%',
-        height: 250
+        borderRadius: 15,
+        height: 700,
+        width: '100%',
+        maxWidth: '100%',
+        marginBottom: 25
     },
     ImgComics: {
+        height: 600,
         width: '100%',
-        height: '60%',
         backgroundColor: '#fff',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15
     },
     DetalhesComics: {
         color: '#fff',
-        fontSize: 15,
-        padding: 5
+        fontSize: 17,
+        padding: 5,
+        
     },
     containerLoading: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#000'
+    },
+    ContainerTituloPagina: {
+        height: 70,
+        backgroundColor: "#101010",
+        width: '100%',
+        padding: 15,
+        flexDirection: 'row',
+        alignItems: "center",
+        justifyContent: "flex-start",
+        marginTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0
+    },
+    TituloPagina: {
+        color: "#ffffff",
+        fontWeight: "bold",
+        fontSize: 23,
     },
 });
 

@@ -33,25 +33,28 @@ export default function Comics({ navigation }) {
 
     function ComicsShow(item){
 
-        const { id, title } = item.item
+        const { id, title, thumbnail } = item.item
       
         return(
-            <View style={style.ContainerComics}>
+            
                 <TouchableOpacity>
                     <View style={style.BlocoComics}>
-                        <Image style={style.ImgComics} source={require('../icons/icon.png')} />
+                        <Image style={style.ImgComics} source={{ uri: thumbnail.path + '.' + thumbnail.extension }} />
                         <Text style={style.DetalhesComics}>ID: {id}</Text>
-                        <Text style={style.DetalhesComics}>Titulo: {title}</Text>
+                        <Text maxLength={4} style={style.DetalhesComics}>Titulo: {title}</Text>
                     </View>
                 </TouchableOpacity>
-            </View>
+            
         );
       }
 
 
 
     return (
-        <>
+        <View style={style.ContainerComics}>
+            <View style={style.ContainerTituloPagina}>
+                <Text style={style.TituloPagina}>Quadrinhos</Text>
+            </View>
             {loading ?
                 <View style={style.containerLoading}>
                     <ActivityIndicator 
@@ -63,11 +66,13 @@ export default function Comics({ navigation }) {
             <FlatList
                 key={'#'}
                 data={comics}
+                horizontal={false}
                 keyExtractor={(comics) => comics.id}
                 renderItem={ComicsShow}
-                numColumns={2}
+                style={{maxWidth: '100%'}}
+                numColumns={1}
             />
             }
-        </>
+        </View>
     );
 }
