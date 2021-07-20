@@ -7,7 +7,7 @@ export default function Inicio({navigation}) {
         <View style={style.ContainerInicio}>
             <Image style={style.LogoInicio} source={require('../icons/icon.png')} />
 
-            <Text style={style.TextoBemvindo}>Bem vindo, venha conhecer mais!</Text>
+            <Text style={style.TextoBemvindo}>Bem-vindo, venha conhecer mais!</Text>
             
             <TouchableOpacity style={style.BotaoInicio} onPress={() => navigation.navigate("Comics")}>
                 <Text style={style.TextoBtn}>Vamos lá</Text>

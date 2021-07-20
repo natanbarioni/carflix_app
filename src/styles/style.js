@@ -39,7 +39,6 @@ const style = StyleSheet.create({
         flex: 1,
         marginTop: StatusBar.currentHeight,
         alignItems: 'center'
-
     },
     BlocoComics: {
         backgroundColor: "#252525",
@@ -97,9 +96,16 @@ const style = StyleSheet.create({
     },
     ComicsDetails: {
         color: '#fff',
-        fontSize: 17,
+        fontSize: 18,
         textAlign: 'center',
-        marginTop: 15        
+        marginTop: 15,
+        fontWeight: 'bold',   
+    },
+    ComicsDescrip: {
+        color: '#fff',
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: 15,
     },
     BotaoDetalhes: {
         backgroundColor: '#f0141e',

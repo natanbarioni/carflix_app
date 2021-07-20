@@ -30,8 +30,8 @@ export default function Comics({navigation: {goBack}, navigation}) {
             }
         })
     },[])
+    
     function ComicsShow(item){
-
         const { id, title, thumbnail } = item.item
         return(
             <TouchableOpacity onPress={() => navigation.navigate("ComicsDetails", {idComics: id})}>

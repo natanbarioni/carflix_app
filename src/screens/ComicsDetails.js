@@ -34,13 +34,13 @@ export default function ComicsDetails({ navigation: {goBack}, route}) {
             }
         })
     },[])
+    
     var UrlDetail = ''
     comics.map(comic => UrlDetail = comic.urls.find(link => link.type == "detail"))
 
     var Data = ''
     comics.map(comic => Data = comic.dates.find(link => link.type == "onsaleDate"))
 
-    console.log();
     if (loading == true) {
         return(
             <View style={style.containerLoading}>
@@ -69,9 +69,14 @@ export default function ComicsDetails({ navigation: {goBack}, route}) {
                         <Text key={comic.id} style={style.ComicsDetails}>{comic.title}</Text>
                     )}
                     {comics.map(comic =>
-                        <Text key={comic.id} style={style.DataDetails}>{moment(Data.date).format('DD/MM/YYYY')}</Text>
+                        <Text key={comic.id} style={style.ComicsDescrip}>{comic.description}</Text>
                     )}
-                    
+                    {comics.map(comic =>
+                        <Text key={comic.id} style={style.DataDetails}>Data: {moment(Data.date).format('DD/MM/YYYY')}</Text>
+                    )}
+                    {comics.map(comic =>
+                        <Text key={comic.id} style={style.DataDetails}>Páginas: {comic.pageCount}</Text>
+                    )}
                     {comics.map(comic =>
                         <TouchableOpacity key={comic.id} style={style.BotaoDetalhes} onPress={() => Linking.openURL(UrlDetail.url)}>
                             <Text style={style.TextoBtn}>Ver mais detalhes</Text>
