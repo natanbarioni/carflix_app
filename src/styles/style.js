@@ -38,22 +38,19 @@ const style = StyleSheet.create({
         backgroundColor: '#000',
         flex: 1,
         marginTop: StatusBar.currentHeight,
-        padding: 20,
-        alignItems: 'center',
+        alignItems: 'center'
 
     },
     BlocoComics: {
-        flex: 1,
         backgroundColor: "#252525",
         marginTop: 10,
         borderRadius: 15,
-        height: 700,
+        height: 500,
         width: '100%',
-        maxWidth: '100%',
-        marginBottom: 25
+        marginBottom: 25,
     },
     ImgComics: {
-        height: 600,
+        height: 400,
         width: '100%',
         backgroundColor: '#fff',
         borderTopLeftRadius: 15,
@@ -62,7 +59,7 @@ const style = StyleSheet.create({
     DetalhesComics: {
         color: '#fff',
         fontSize: 17,
-        padding: 5,
+        padding: 5
         
     },
     containerLoading: {
@@ -73,7 +70,6 @@ const style = StyleSheet.create({
     },
     ContainerTituloPagina: {
         height: 70,
-        backgroundColor: "#101010",
         width: '100%',
         padding: 15,
         flexDirection: 'row',
@@ -85,6 +81,41 @@ const style = StyleSheet.create({
         color: "#ffffff",
         fontWeight: "bold",
         fontSize: 23,
+    },
+    row: {
+        flexDirection: 'row',
+    },
+    ContainerDetails: {
+        flex: 1,
+        marginTop: StatusBar.currentHeight,
+        backgroundColor: '#000',
+        alignItems: 'center',
+    },
+    CapaComics: {
+        width: 200,
+        height: 350,
+    },
+    ComicsDetails: {
+        color: '#fff',
+        fontSize: 17,
+        textAlign: 'center',
+        marginTop: 15        
+    },
+    BotaoDetalhes: {
+        backgroundColor: '#f0141e',
+        width: 200,
+        height: 55,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 30
+    },
+    DataDetails: {
+        color: '#fff',
+        fontSize: 17,
+        textAlign: 'center',
+        marginTop: 15,
+        fontWeight: 'bold'
     },
 });
 
